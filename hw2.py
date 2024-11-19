@@ -41,11 +41,7 @@ g3 = discriminant_unequal(test_point, mean_class3, cov_class3)
 # 分类结果
 predicted_class = np.argmax([g1, g2, g3]) + 1
 print("The predicted class is:", predicted_class)
-
-
-
-
-
+#以下计算协方差矩阵相同时
 # 样本数量
 n1, n2, n3 = x_class1.shape[1], x_class2.shape[1], x_class3.shape[1]
 # 计算共享协方差矩阵
